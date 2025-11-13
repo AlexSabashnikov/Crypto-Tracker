@@ -1,0 +1,25 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 details">
+            <div class="img">
+                <img [src]="coinData?.image?.large" alt="">
+                <h3 class="text-center" style="font-size: 23px;">{{coinData?.name}}</h3>
+                <div class="more-detail">
+                    <span class="title">Цена: </span> <span class="value">{{coinData?.market_data.current_price.usd | currency: currency}}</span><br>
+                    <span class="title">Капитализация: </span> <span class="value">{{coinData?.market_data.market_cap.usd | currency:currency}}</span>
+                </div>
+            </div>
+        </div>
+        <div class="graph">
+            <canvas style="width: 350px;" baseChart [data]="lineChartData" [options]="lineChartOptions" [type]="lineChartType"></canvas>
+            <div class="d-flex justify-content-around">
+                <button (click)="getGraphData(0.04)" class="btn btn-custom">Час</button>
+                <button (click)="getGraphData(0.16)" class="btn btn-custom">4 часа</button>
+                <button (click)="getGraphData(1)" class="btn btn-custom">24 часа</button>
+                <button (click)="getGraphData(30)" class="btn btn-custom">Месяц</button>
+                <button (click)="getGraphData(90)" class="btn btn-custom">3 месяца</button>
+                <button (click)="getGraphData(365)" class="btn btn-custom">1 год</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+.registration-container {
+    background-color: rgb(39, 52, 93);
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 3px solid #35e980;
+    border-radius: 20px;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    color:azure;
+    h1 {
+        text-align: center;
+        font-size: 32px;
+    }
+    label {
+        display: block;
+        padding: 15px;
+        font-size: 20px;
+        margin-left: 5px;
+    }
+    input {
+        width: 90%;
+        padding: 5px;
+        margin-left: 20px;
+        font-size: 16px;
+    }
+    button {
+        border-radius: 10px;
+        color:black;
+        font-size: 18px;
+        padding: 10px;
+        margin-left: 130px;
+        margin-top: 15px;
+        background-color: rgb(134, 252, 203);
+        border: 2px solid #4e4e4e;
+    }
+}
+
+form div {
+    margin-bottom: 15px;
+}
+

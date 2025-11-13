@@ -1,0 +1,7 @@
+<mat-toolbar>
+    <span><h1>Криптовалютный трекер</h1></span>
+    <span *ngIf="userName">Пользователь: {{ userName }}</span>
+    <span class="left-space">Валюта: USD</span>
+    <span>{{ currentDate | date: 'dd.MM.yyyy' }}</span>
+</mat-toolbar>
+<router-outlet></router-outlet>

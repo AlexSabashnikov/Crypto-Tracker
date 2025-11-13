@@ -1,0 +1,58 @@
+.header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    color: #ffffff;
+    h2 {
+        font-weight: bold;
+        margin-bottom: 15px;
+        margin-top: 20px;
+        font-size: 3rem;
+        line-height: 1.2;
+        letter-spacing: -0.0083em;
+    }
+    h6 {
+        color: darkgray;
+        text-transform: capitalize;
+        font-size: 0.8rem;
+        font-weight: 500;
+        line-height: 1.57;
+        letter-spacing: 0.00714em;
+    }
+}
+
+button{
+    border-radius: 2px;
+    color:rgb(242, 242, 242);
+    font-size: 16px;
+    padding: 5px;
+    margin-left: 10px;
+    margin-top: -80px;
+    background-color: rgb(56, 56, 56);
+    border: 4px solid #06acff;
+}
+
+table {
+    width: 100%;
+}
+
+td,
+th {
+    width: 35%;
+    font-size: 16px;
+}
+
+:host ::ng-deep .mat-sort-header-content {
+    color: #ffffff;
+}
+
+:host ::ng-deep tr.mat-header-row {
+    background-color: #0075cf;
+}
+
+:host ::ng-deep tr.mat-row {
+    height: 70px;
+}
